@@ -4,7 +4,7 @@
   "description": "50 projects with HTML CSS and Javascript",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch style/style.scss style/style.css"
+    "sass": "sass --watch style/sass/style.scss style/style.css"
   },
   "repository": {
     "type": "git",
