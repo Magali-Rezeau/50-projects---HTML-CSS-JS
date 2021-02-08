@@ -1,0 +1,19 @@
+{
+  "name": "50-projects--html-css-js",
+  "version": "1.0.0",
+  "description": "50 projects with HTML CSS and Javascript",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch style/style.scss style/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magali-Rezeau/50-projects--HTML-CSS-JS.git"
+  },
+  "author": "Magali Rézeau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Magali-Rezeau/50-projects--HTML-CSS-JS/issues"
+  },
+  "homepage": "https://github.com/Magali-Rezeau/50-projects--HTML-CSS-JS#readme"
+}
