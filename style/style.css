@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  height: 100vh;
+  height: 100%;
   background-image: linear-gradient(to right bottom, rgba(27, 27, 34, 0.9), rgba(166, 171, 217, 0.9)), url("./../../img/header-home.jpg");
   background-position: center;
   background-size: cover;
@@ -39,6 +39,7 @@ header {
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   background-color: #f2f2f2;
+  margin: 1rem;
 }
 .card__picture {
   background-size: cover;

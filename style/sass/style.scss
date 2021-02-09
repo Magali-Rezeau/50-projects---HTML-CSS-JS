@@ -8,7 +8,7 @@
 
 body {
     margin: 0;
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to right bottom, rgba(27, 27, 34, .9), hsla(234, 40%, 75%, 0.9)), url('./../../img/header-home.jpg');
     background-position: center;
     background-size: cover;
@@ -41,7 +41,8 @@ header {
     overflow: hidden;
     box-shadow: 0 1.5rem 4rem rgba(black, .15);
     background-color: $white;
-
+    margin: 1rem;
+    
     &__picture {
         background-size: cover;
         height: 12rem;
