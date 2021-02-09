@@ -1,0 +1,101 @@
+<span>Photo by <a href="https://unsplash.com/@caustin89?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Austin</a>on <a href="https://unsplash.com/t/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 2rem;
+  color: #f2f2f2;
+}
+
+.bg {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  bottom: -1rem;
+  right: -1rem;
+  background-image: url("./img/christopher-austin-K6LIvHXYen0-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px);
+  z-index: -1;
+}
+
+.loader {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 12rem;
+  height: 12rem;
+  box-sizing: border-box;
+}
+
+.loader .face {
+  position: absolute;
+}
+
+.loader .face.face1 {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  border-left: 4px solid #ffffff;
+  border-top: 4px solid #ffffff;
+  animation: animate 3s linear infinite;
+}
+
+.loader .face.face2 {
+  top: 1.875rem;
+  left: 1.875rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  border-radius: 50%;
+  border-right: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  animation: animate 3s reverse linear infinite;
+}
+
+.loader .face .circle {
+  position: absolute;
+  top: calc(50% - 1px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  transform-origin: left;
+}
+
+.loader .face.face1 .circle {
+  transform: rotate(-45deg);
+}
+
+.loader .face.face2 .circle {
+  transform: rotate(-45deg);
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader__text {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

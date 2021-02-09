@@ -32,12 +32,12 @@ header {
 
 .card {
   position: relative;
-  height: 25rem;
+  height: 23rem;
   width: 20rem;
   transition: all 0.8s ease;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(167, 172, 217, 0.15);
   background-color: #f2f2f2;
   margin: 1rem;
 }
@@ -74,20 +74,29 @@ header {
   color: #f2f2f2;
 }
 .card__details {
-  padding: 3rem;
+  padding: 2rem 2rem 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 10.375rem;
 }
-.card__details ul {
-  list-style: none;
-  width: 80%;
-  margin: 0 auto;
+.card__details-btn {
+  border: none;
+  background-image: linear-gradient(to right bottom, #1b1b1B, #a7acd9e6);
+  box-shadow: 0 10px 10px -5px #a7acd9;
+  width: 6rem;
+  height: 2rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
 }
-.card__details ul li {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 1rem;
+.card__details-btn a {
+  text-decoration: none;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
 }
-.card__details ul li:not(:last-child) {
-  border-bottom: 1px solid #f2f2f2;
+.card__details-btn:hover {
+  transform: translateY(-3px);
+  background-image: linear-gradient(to right bottom, #a7acd9e6, #1b1b1B);
 }
 
 /*# sourceMappingURL=style.css.map */

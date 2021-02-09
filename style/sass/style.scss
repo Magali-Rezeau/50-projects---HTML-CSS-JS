@@ -34,15 +34,15 @@ header {
 
 .card {
     position: relative;
-    height: 25rem;
+    height: 23rem;
     width: 20rem;
     transition: all .8s ease;
     border-radius: 3px;
     overflow: hidden;
-    box-shadow: 0 1.5rem 4rem rgba(black, .15);
+    box-shadow: 0 1.5rem 4rem rgba($secondary, .15);
     background-color: $white;
     margin: 1rem;
-    
+
     &__picture {
         background-size: cover;
         height: 12rem;
@@ -82,21 +82,28 @@ header {
     }
 
     &__details {
-        padding: 3rem;
+        padding: 2rem 2rem 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 10.375rem; 
 
-        ul {
-            list-style: none;
-            width: 80%;
-            margin: 0 auto;
-
-            li {
-                text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid $white;
-                }
+        &-btn {
+            border: none;
+            background-image: linear-gradient(to right bottom, $primary, $secondary);
+            box-shadow: 0 10px 10px -5px rgba($secondary, 1);
+            width: 6rem;
+            height: 2rem;
+            outline: none;
+            transition: all .3s ease-in-out;
+            & a {
+                text-decoration: none;
+                color: $white;
+                font-family: 'Big Shoulders Display', cursive;
+            }
+            &:hover {
+                transform: translateY(-3px);
+                background-image: linear-gradient(to right bottom, $secondary, $primary);
             }
         }
     }
