@@ -5,23 +5,24 @@ const steps = document.querySelectorAll('.progress__items-step');
 let currentStep = 1;
 
 nextBtn.addEventListener('click', e => {
-  currentStep ++;
+  currentStep++;
   if (currentStep > steps.length) {
     currentStep = steps.length;
   }
   console.log(currentStep);
   activeStepAndProgressBar();
 });
+
 prevBtn.addEventListener('click', e => {
-  currentStep --;
+  currentStep--;
   if (currentStep < 1) {
     currentStep = 1;
   }
   activeStepAndProgressBar();
-
 });
+
 const activeStepAndProgressBar = () => {
-  steps.forEach( (step, index) => {
+  steps.forEach((step, index) => {
     if (index < currentStep) {
       step.classList.add('active');
     } else {
@@ -32,6 +33,3 @@ const activeStepAndProgressBar = () => {
     progressBar.style.width = (activeSteps.length - 1) / (steps.length - 1) * 100 + "%";
   });
 };
-
-
-

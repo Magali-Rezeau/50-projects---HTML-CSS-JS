@@ -1,55 +1,47 @@
 @import 'variables';
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-margin: 0;
-  height: 100vh;
-  
-  background-image: linear-gradient(to right bottom, rgba(27, 27, 34, .9), hsla(234, 40%, 75%, 0.9)), url('./../../img/header-home.jpg');
-  background-position: center;
+    margin: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(27, 27, 34, .9), hsla(234, 40%, 75%, 0.9)), url('./../../img/header-home.jpg');
+    background-position: center;
     background-size: cover;
     font-family: 'Big Shoulders Display', cursive;
- 
 }
+
 header {
-  height: 5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $primary;
-  color: $white;
-  
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary;
+    color: $white;
 }
+
 .container {
     margin: 4rem 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    height: 100%;
 }
 
-  .card {
-      position: relative;
+.card {
+    position: relative;
     height: 25rem;
     width: 20rem;
-        transition: all .8s ease;
-       
-     
-        border-radius: 3px;
-        overflow: hidden;
-        box-shadow: 0 1.5rem 4rem rgba(black, .15);
-   
-            background-color:$white;
-     
-  
+    transition: all .8s ease;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 1.5rem 4rem rgba(black, .15);
+    background-color: $white;
 
-    
-
-
-    // FRONT SIDE STYLING
     &__picture {
         background-size: cover;
         height: 12rem;
@@ -58,13 +50,12 @@ header {
         clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
-        
+
         & img {
             object-fit: cover;
             width: 100%;
             height: 100%;
         }
-       
     }
 
     &__heading {
@@ -77,18 +68,16 @@ header {
         top: 8rem;
         right: 1rem;
         width: 75%;
-    
     }
 
     &__heading-span {
         padding: 1rem 1.5rem;
         -webkit-box-decoration-break: clone;
         box-decoration-break: clone;
-        background-image: linear-gradient(to right bottom, 
-            rgba($primary, .85), 
-            rgba($secondary,.85));
-            color: $white;
-      
+        background-image: linear-gradient(to right bottom,
+            rgba($primary, .85),
+            rgba($secondary, .85));
+        color: $white;
     }
 
     &__details {
@@ -110,9 +99,4 @@ header {
             }
         }
     }
-
-   
-
-
-
 }
