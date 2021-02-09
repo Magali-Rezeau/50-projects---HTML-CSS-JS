@@ -1,4 +1,4 @@
-<span>Photo by <a href="https://unsplash.com/@caustin89?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Christopher Austin</a>on <a href="https://unsplash.com/t/nature?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>* {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -45,7 +45,6 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 1);
   border-radius: 50%;
   border-left: 4px solid #ffffff;
@@ -82,6 +81,14 @@ body {
   transform: rotate(-45deg);
 }
 
+.loader__text {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes animate {
   0% {
     transform: rotate(0deg);
@@ -90,12 +97,4 @@ body {
   100% {
     transform: rotate(360deg);
   }
-}
-
-.loader__text {
-  opacity: 1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
