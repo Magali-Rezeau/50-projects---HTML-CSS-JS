@@ -12,4 +12,4 @@ function displayBoxes() {
       box.classList.remove('show');
     }
   });
-};
+}

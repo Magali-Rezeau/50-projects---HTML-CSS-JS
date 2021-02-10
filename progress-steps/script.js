@@ -9,7 +9,6 @@ nextBtn.addEventListener('click', e => {
   if (currentStep > steps.length) {
     currentStep = steps.length;
   }
-  console.log(currentStep);
   activeStepAndProgressBar();
 });
 

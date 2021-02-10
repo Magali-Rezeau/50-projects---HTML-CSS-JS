@@ -23,4 +23,4 @@ function timer() {
   loaderText.innerText = `${load}%`;
   loader.style.opacity = map(load, 0, 100, 1, 0);
   bg.style.filter = `blur(${map(load, 0, 100, 30, 0)}px)`;
-};
+}
