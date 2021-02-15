@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background-color: #444ead;
+  color: #f2f2f2;
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem 3rem;
+}
+
+.counter {
+  font-size: 4rem;
+  margin-top: .7rem;
+}
+
+@media (max-width: 36rem) {
+  body {
+    flex-direction: column;
+  }
+}
