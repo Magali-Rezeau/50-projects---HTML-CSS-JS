@@ -26,3 +26,9 @@ closeBtn.addEventListener('click', () => {
 overlay.addEventListener('click', () => {
   closeModal();
 });
+
+document.addEventListener('keydown', () => {
+  closeModal();
+});
+
+
